@@ -1,6 +1,7 @@
 package exercicioherois;
 
 import exercicioherois.cli.Display;
+import exercicioherois.exception.OpcaoInvalidaException;
 import exercicioherois.model.Heroi;
 import exercicioherois.model.Opcao;
 import exercicioherois.model.Personagem;
@@ -24,7 +25,7 @@ public class Aplicacao {
             try{
                 opcao = Opcao.converter(codigo);
                 processar(opcao);
-            } catch (IllegalArgumentException e) {
+            } catch (OpcaoInvalidaException e) {
                 display.exibirMensagem(e.getMessage() );
             }
 

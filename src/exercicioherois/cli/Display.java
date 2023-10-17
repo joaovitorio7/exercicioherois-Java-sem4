@@ -4,6 +4,7 @@ import exercicioherois.model.Heroi;
 import exercicioherois.model.Personagem;
 import exercicioherois.model.Vilao;
 
+import java.util.Collections;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
@@ -61,6 +62,7 @@ public class Display {
     }
 
     public void listar(List<Personagem> personagens) {
+        Collections.sort(personagens); //  personagens.stream().sorted();
         System.out.println("Listando...");
         personagens.forEach(System.out::println);
         System.out.println();

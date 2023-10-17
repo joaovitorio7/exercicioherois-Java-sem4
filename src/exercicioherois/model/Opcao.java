@@ -1,5 +1,7 @@
 package exercicioherois.model;
 
+import exercicioherois.exception.OpcaoInvalidaException;
+
 public enum Opcao {
 
     CADASTRAR_HEROI,
@@ -7,9 +9,9 @@ public enum Opcao {
     LISTAR,
     SAIR;
 
-    public static Opcao converter(int codigo){
+    public static Opcao converter(int codigo) throws OpcaoInvalidaException {
         if (codigo == 0 || codigo > 4)
-            throw new IllegalArgumentException("Opcao Inválida");
+            throw new OpcaoInvalidaException("Opcao Inválida");
         if (codigo == 4)
             return SAIR;
         return Opcao.values()[codigo - 1];
