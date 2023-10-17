@@ -10,6 +10,13 @@ public class Heroi extends Personagem{
         this.nomeVidaReal = nomeVidaReal;
     }
 
+    @Override
+    public String toString() {
+        return "Heroi{" +
+                "nomeVidaReal='" + nomeVidaReal + '\'' +
+                '}';
+    }
+
     public String getNomeVidaReal() {
         return nomeVidaReal;
     }

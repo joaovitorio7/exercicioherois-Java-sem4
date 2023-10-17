@@ -9,6 +9,13 @@ public class Vilao extends Personagem{
         this.tempoDeprisao = tempoDeprisao;
     }
 
+    @Override
+    public String toString() {
+        return "Vilao{" +
+                "tempoDeprisao=" + tempoDeprisao +
+                '}';
+    }
+
     public Integer getTempoDeprisao() {
         return tempoDeprisao;
     }
