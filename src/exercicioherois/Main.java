@@ -2,6 +2,7 @@ package exercicioherois;
 
 public class Main {
     public static void main(String[] args) {
-       System.out.print("Hello and welcome!");
+       Aplicacao aplicacao = new Aplicacao();
+       aplicacao.executar();
     }
 }
