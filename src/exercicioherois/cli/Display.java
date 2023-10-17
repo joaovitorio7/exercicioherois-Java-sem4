@@ -64,7 +64,7 @@ public class Display {
     public void listar(List<Personagem> personagens) {
         Collections.sort(personagens); //  personagens.stream().sorted();
         System.out.println("Listando...");
-        personagens.forEach(System.out::println);
+        personagens.forEach(p -> System.out.println(p));
         System.out.println();
     }
 }
